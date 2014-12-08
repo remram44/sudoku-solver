@@ -5,3 +5,4 @@ PROJECT(sudoku)
 
 # Recursively build components
 ADD_SUBDIRECTORY(solver)
+ADD_SUBDIRECTORY(cli)
