@@ -1,3 +1,9 @@
+# Optional debug output
+OPTION(DEBUG_SOLVER "Debug output from the solver" OFF)
+IF(DEBUG_SOLVER)
+    ADD_DEFINITIONS(-DDEBUG_SOLVER)
+ENDIF()
+
 # Build the library
 SET(SOLVER_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include" CACHE INTERNAL "solver include directories")
 INCLUDE_DIRECTORIES("${SOLVER_INCLUDE_DIR}")
